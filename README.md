@@ -54,6 +54,6 @@ if __name__ == '__main__':
 
 There are two models, which used different optimizers and hyper-parameters.
 
-![](D:\DeepLearning\Image\ResNet1.svg)
+![](http://github.com/lzyhha/resnet-tf/raw/master/ResNet1.svg)
 
 ![](D:\DeepLearning\Image\ResNet2.svg)
