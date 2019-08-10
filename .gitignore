@@ -194,3 +194,8 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+/logs/
+/cifar/
+/logs2/
+/models2/
+/plot.py
