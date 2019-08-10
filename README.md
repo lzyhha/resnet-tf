@@ -54,6 +54,6 @@ if __name__ == '__main__':
 
 There are two models, which used different optimizers and hyper-parameters.
 
-![](http://github.com/lzyhha/resnet-tf/raw/master/img/resnet1.svg)
+![](http://github.com/lzyhha/resnet-tf/raw/master/img/resnet1.emf)
 
-![](http://github.com/lzyhha/resnet-tf/raw/master/img/resnet2.svg)
+![](http://github.com/lzyhha/resnet-tf/raw/master/img/resnet2.emf)
