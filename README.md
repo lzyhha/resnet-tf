@@ -17,7 +17,7 @@ Residual networks implemented by tensorflow for CIFAR-10. Currently achieves 93.
 | n_classes        | output class number                           |
 | batch_size       | batch size for one iteration                  |
 | is_training      | training or predict (for batch normalization) |
-| layers           | res-net layers in a res-group                 |
+| layers           | number of res-net layers in a res-group                 |
 | logdir           | directory to save logs of accuracy and loss   |
 | modeldir         | directory to save models                      |
 | model_name       | Model name                                    |

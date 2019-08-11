@@ -131,7 +131,7 @@ class ResNet(object):
                 return
             print('reload', self.conf.reload_step)
 
-        images, labels = distorted_inputs('cifar', self.conf.batch_size)
+        images, labels = distorted_inputs(self.conf.datadir, self.conf.batch_size)
 
         tf.train.start_queue_runners(sess=self.sess)
 
@@ -170,7 +170,7 @@ class ResNet(object):
                 return
             print('reload', self.conf.reload_step)
 
-        images, labels = inputs(True, 'cifar', self.conf.batch_size)
+        images, labels = inputs(True, self.conf.datadir, self.conf.batch_size)
 
         tf.train.start_queue_runners(sess=self.sess)
 
