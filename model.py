@@ -105,7 +105,6 @@ class ResNet(object):
             tf.add_to_collection('losses', weight_decay_loss)
 
             loss_op = tf.add_n(tf.get_collection('losses'), name='loss_op')
-        tf.summary.scalar(name='losses', tensor=loss_op)
         return loss_op, softmax
 
     def accuracy(self, scope='accuracy'):
