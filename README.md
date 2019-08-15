@@ -31,6 +31,16 @@ Due to the batch normalization layer, 'is_training=True' should be set during tr
 
 
 
+## Dependencies
+
+- **Numpy**
+- **tensorflow (tensorflow-gpu)**
+- **os**
+
+These packages are available via **pip install**.
+
+
+
 ## Run
 
 - #### Train

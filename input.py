@@ -1,13 +1,6 @@
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-
 import os
-
 import tensorflow.python.platform
-from six.moves import xrange
 import tensorflow as tf
-
 from tensorflow.python.platform import gfile
 
 NUM_CLASSES = 10
@@ -59,7 +52,7 @@ def _generate_image_and_label_batch(image, label, min_queue_examples,
 
 def distorted_inputs(data_dir, batch_size):
     filenames = [os.path.join(data_dir, 'data_batch_%d.bin' % i)
-                 for i in xrange(1, 6)]
+                 for i in range(1, 6)]
     for f in filenames:
         if not gfile.Exists(f):
             raise ValueError('Failed to find file: ' + f)
@@ -88,7 +81,7 @@ def distorted_inputs(data_dir, batch_size):
 def inputs(eval_data, data_dir, batch_size):
     if not eval_data:
         filenames = [os.path.join(data_dir, 'data_batch_%d.bin' % i)
-                     for i in xrange(1, 6)]
+                     for i in range(1, 6)]
         num_examples_per_epoch = NUM_EXAMPLES_PER_EPOCH_FOR_TRAIN
     else:
         filenames = [os.path.join(data_dir, 'test_batch.bin')]
